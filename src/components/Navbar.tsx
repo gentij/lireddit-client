@@ -25,14 +25,16 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
     body = (
       <Box display="flex">
         <Box mr={2}>{data?.me?.username}</Box>
-        <Button variant="link">Logout</Button>
+        <Button color="black" variant="link">
+          Logout
+        </Button>
       </Box>
     );
   }
 
   return (
-    <Box display="flex" p={4} bg="tomato" ml="auto">
-      <Box color="#f3f3f3" ml="auto" mr={2}>
+    <Box display="flex" p={4} bg="tan" ml="auto">
+      <Box ml="auto" mr={2}>
         {body}
       </Box>
     </Box>
